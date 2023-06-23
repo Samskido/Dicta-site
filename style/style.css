@@ -1,0 +1,280 @@
+@font-face {
+    font-family: Aquatico;
+    src: url(../Aquatico-Regular.otf);
+}
+
+@font-face {
+    font-family: Piersans;
+    src: url(../PierSans-Regular.otf);
+}
+
+@font-face {
+    font-family: Justsans;
+    src: url(../JUST\ Sans\ Regular.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.nav-bar-image img{
+    margin-top: 0.5rem; 
+   
+}
+
+.nav-bar{
+    display: flex;  
+    margin-left: 5rem; 
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+   
+}
+
+.navitem a{
+    text-decoration: none;
+    color:#0A2742;
+    font-size: 18px;
+    font-family: Piersans;
+    font-weight: 400;
+}
+
+.navbar-nav{
+    display: flex;
+    gap:3rem;
+    margin-left: 4rem;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+
+
+
+  .dropdown-menu, .dropdown-menu2  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    border: none;
+    border-radius: 5px;
+    font-family: Piersans;
+    padding-right: 20px;
+    padding-left: 10px;
+    top: 70px
+}
+
+.dropdown-menu2 a{
+    float:none;
+    padding: 12px 16px;
+    display: block;
+    font-size: 18px;
+    color:#0A2742;
+    
+}
+
+  
+.dropdown-menu  a {
+    float: none;
+    color:#0A2742;
+    padding: 12px 16px;
+    display: block;
+    
+} 
+.dropdown-item:hover{
+    background-color: black;
+    color:white;
+}
+.dropdown-item2:hover {
+    background-color: black;
+    color: white;
+    
+}
+.right-menu{
+    margin-left: auto;
+    display: flex;
+    gap: 3rem;
+    margin-right: 6rem;
+    margin-top: 1rem;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Piersans;
+    
+}
+.right-menu a{
+    text-decoration: none;
+}
+.login{
+color:#0A2742;
+}
+.register:hover{
+    background-color: #DC3442 ;
+    color:#FFFF;
+}
+.register{
+    color: #DC3442;
+    border-style: solid;
+    border-width: 1px;
+    padding: 15px 40px 15px 40px;
+    border-radius: 20px;
+    font-family: Piersans;
+}
+.full-landing-page{
+    display: flex;
+    gap: 140px;
+    margin-left:8%;
+}
+.landing-text{
+    padding-top: 2%;
+}
+.landing-text h1{
+    color: #0A2742;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-family:  Aquatico;
+
+}
+.landing-text p{
+    color: #3F566B;
+    font-size: 400;
+    font-size: 20px;
+    letter-spacing:1px;
+    line-height: 2rem;
+    font-family: Piersans; 
+}
+.landingpage-image img{
+    width:71.99vh;
+  margin-right: 5rem;
+  margin-bottom: 0rem;
+}
+.learn{
+    color: #ffff;
+    background-color: #DC3442 ;
+    border-style: solid;
+    border-width: 1px;
+    padding: 15px 40px 15px 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-family:Justsans ;
+  }
+  .landing-learn-text a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    }
+.landing-learn-text{
+  padding-top: 10%;
+}
+.learn:hover {
+ background-color: #fff;
+ color:#DC3442 ;
+}
+  .bottoms-images ul{
+    display: flex;
+    gap: 25px;
+    margin-left: 15px;
+    margin-top: 70px;
+    list-style: none;
+   
+}
+
+
+
+.mediaquerry{
+    display: none;
+}
+#hamburger-icon{
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: none;
+    cursor:pointer;
+}
+#hamburger-icon div{
+width:45px;
+height: 5px; 
+margin: 2px 7px 2px 5px;
+transition: 0.4s;
+background-color:#F16725;
+
+
+}
+
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform:rotate(-45deg) translate(-6px, 6px); 
+}
+.open .bar2 {
+    opacity: 0px;
+}
+.open .bar3 {
+ -webkit-transform: rotate(45deg) translate(-6px, -20px);
+transform: rotate(45deg) translate(-6px, -10px);
+}
+
+ 
+.open .mobile-menu  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    margin-top: 30px;
+    gap:10px;
+    background-color:#F16725;
+    width: 100px;
+    list-style: none;
+    font-family: poppinsfonts;
+ font-weight: 500;
+ font-size: 15px;
+ 
+    
+}
+.mobile-menu a{
+    text-decoration: none;
+    color:white;
+    margin-top: 2rem;
+   
+}
+.mobile-menu{
+    display: none;
+    background: #F16725;
+}
+
+@media only screen and (max-width:768px){
+    .navbar-nav{
+        display: none;
+    }
+    .nav-bar-image{
+        display: none;
+    }
+    .right-menu{
+        display: none;
+    }
+    #hamburger-icon{
+        display: block;
+        margin-right: 4rem;
+        margin-top: 1rem;
+       
+    }
+  
+    .mediaquerry{
+        display: flex;
+        justify-content: space-between;
+      
+    }
+}
+ 
+
+
+
+
+
+
+
